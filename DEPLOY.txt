@@ -1,0 +1,22 @@
+GREY STREET PLUGIN - NETLIFY DEPLOY
+
+IMPORTANT: Upload the EXTRACTED FILES/FOLDERS to the ROOT of the GitHub repo.
+Do NOT upload this ZIP file itself to the repo.
+
+At the top level of the GitHub repo you should see:
+- index.html
+- netlify.toml
+- package.json
+- README.md
+- netlify/  (folder)
+
+Then in Netlify:
+1. Import the GitHub repo as a NEW site.
+2. Netlify should read netlify.toml automatically.
+3. Build command: mkdir -p dist && cp index.html dist/index.html
+4. Publish directory: dist
+5. Functions directory: netlify/functions
+6. Deploy.
+
+After success, your MCP endpoint is:
+https://YOUR-PLUGIN-SITE.netlify.app/mcp
